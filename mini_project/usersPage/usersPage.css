@@ -1,0 +1,36 @@
+:root {
+    --col-h2: #ebf8f8;
+    --bg-bthHover: #9d0f29;
+}
+
+.usersMain {
+    background-image: url("../backgroundPictures/wall-background.jpg");
+    height: 100vh;
+    background-attachment: fixed;
+    overflow: scroll;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.userBtnDiv {
+    width: 40%;
+    text-align: center;
+}
+
+.userDiv {
+    color: var(--col-h2);
+    font-size: 5vh;
+}
+
+.userDetailsBtn {
+    border-radius: 1vw;
+    width: 30vw;
+    background-color: var(--col-h2);
+}
+
+.userDetailsBtn:hover {
+    height: 3.3vh;
+    background-color: var(--bg-bthHover);
+    transition: 1s;
+}
