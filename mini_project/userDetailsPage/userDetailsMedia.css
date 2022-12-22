@@ -24,8 +24,8 @@
 
     .back, .forward {
         position: relative;
-        width: 17vw;
-        left: 35vw;
+        width: 25vw;
+        left: 25vw;
         bottom: -3vh;
         border-radius: 3vw;
     }
