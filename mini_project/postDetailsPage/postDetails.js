@@ -18,7 +18,7 @@ postDiv.innerHTML = `
 const postCommentsDiv = document.createElement('div');
 postCommentsDiv.classList.add('postCommentsDiv');
 
-fetch('https://jsonplaceholder.typicode.com/comments')
+fetch(`https://jsonplaceholder.typicode.com/comments`)
     .then(value => value.json())
     .then(comments => {
         comments.filter(comment => post.id === comment.postId)
@@ -45,7 +45,6 @@ let click = true;
 button.addEventListener('click', () => {
     postDetailsMain.classList.toggle('light-theme');
 
-    console.log(button.length);
     if (!click) {
         button.innerText = 'light';
     }

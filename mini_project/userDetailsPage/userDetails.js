@@ -1,5 +1,5 @@
 const url = new URL(location.href);
-// console.log(url);
+console.log(url);
 const data = url.searchParams.get('data');
 const user = JSON.parse(data);
 
@@ -38,11 +38,9 @@ postBtnDiv.classList.add('postBtnDiv');
 userBtnDiv.appendChild(button);
 userDetailsDiv.append(postsDiv);
 
-let flag = true;
-
 button.onclick = () => {
 
-    fetch('https://jsonplaceholder.typicode.com/posts')
+    fetch(`https://jsonplaceholder.typicode.com/posts`)
         .then(value => value.json())
         .then(posts => {
             posts.filter(post => post.userId === user.id)
